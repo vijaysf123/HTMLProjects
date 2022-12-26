@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Testimonial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h2>Slick Textimonials</h2>
+        <div class="slider-wrapper">
+            <div class="slider-container responsive">
+
+                <div class="slide">
+                    <h1>Slider Image 1</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+                
+                <div class="slide">
+                    <h1>Slider Image 2</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+
+                <div class="slide">
+                    <h1>Slider Image 3</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+
+                <div class="slide">
+                    <h1>Slider Image 4</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+
+                <div class="slide">
+                    <h1>Slider Image 5</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+
+                <div class="slide">
+                    <h1>Slider Image 6</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+
+                <div class="slide">
+                    <h1>Slider Image 7</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia similique nesciunt culpa tempora natus minus repudiandae deserunt blanditiis, ea iure hic provident aperiam iste dolor, exercitationem ipsa autem sit facere amet labore.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        function slickCall(){
+            $('.responsive').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                  // You can unslick at a given breakpoint now by adding:
+                  // settings: "unslick"
+                  // instead of a settings object
+                ]
+              });
+        }
+        slickCall();
+    </script>
+</body>
+</html>

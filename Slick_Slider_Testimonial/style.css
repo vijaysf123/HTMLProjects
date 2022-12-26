@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3698bd; 
+}
+
+main h2{
+    font-size: 50px;
+    margin-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+} 
+.slider-wrapper{
+    margin-top: 50px;
+}
+
+.slider-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.slide{
+    text-align: center;
+    line-height: 1.5;
+    padding: 40px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    color: #3698bd;
+}
+
+.slide h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.slide p{
+    font-size: 16px;
+}
+
+.slide a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #3698bd;
+    color: #fff;
+    margin-top: 10px;
+}
