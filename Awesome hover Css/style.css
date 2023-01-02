@@ -1,0 +1,33 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 20vh;
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container:hover > :not(:hover){
+    opacity: 0.4;
+}
+
+.item{
+    background-color: #04907d;
+    height: 200px;
+    width: 200px;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
