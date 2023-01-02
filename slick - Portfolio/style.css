@@ -1,0 +1,101 @@
+ html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+}
+
+h2,
+p {
+    margin: 30px 0 0;
+    padding: 0;
+} 
+p {
+    color: #bf0606;
+}
+.slider {
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    margin: 15px auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
+}
+
+.slick-initialized .slick-slide{
+    text-align: center;
+}
+
+.slick-slide img {
+    width: 420px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 20%;
+}
+
+.desc h2 {
+    padding: 0;
+    color: red;
+    margin-bottom: 0;
+}
+
+.desc p{
+    margin-block: 10px;
+}
+
+a.btn {
+    color: black;
+    text-decoration: none;
+    background: aqua;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.left,.right{
+    position: absolute;
+    top: 25%;
+    z-index: 999999;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.right{
+    right: 0;
+}
+
+.slick-dots li{
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.slick-dots li button{
+    font-size: 0;
+    height: 10px;
+    width: 0;
+    border: #ccc;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots .slick-active button{
+    background-color: #2a8bcd;   
+}

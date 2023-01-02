@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slider</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body> 
+  <section class="slider">
+    <div>
+        <img src="https://source.unsplash.com/random/?city" class="slide-image"/>
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$289.99 - $299.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  
+    <div>
+        <img src="https://source.unsplash.com/random?sky" class="slide-image"/>
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$299.99 - $329.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  
+    <div>
+        <img class="slide-image" src= "https://source.unsplash.com/random?rain" />
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$289.99 - $299.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  
+    <div>
+        <img class="slide-image" src="https://source.unsplash.com/random?water" />
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$299.99 - $329.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  
+    <div>
+        <img class="slide-image" src="https://source.unsplash.com/random?dog" />
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$289.99 - $299.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  
+    <div>
+        <img class="slide-image" src="https://source.unsplash.com/random?baby" />
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$299.99 - $329.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div> 
+  
+    <div>
+        <img class="slide-image" src="https://source.unsplash.com/random?rock" />
+      <div class="desc">
+        <h2><span>BEAT</span> HeadPhone</h2>
+        <p>$299.99 - $329.99</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div> 
+  </section> 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+<script>
+	function createSlick(){  
+
+	$(".slider").slick({
+		slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  dots: true,
+  autoplaySpeed: 2000,
+  prevArrow: '<i class="fa fa-chevron-left left" aria-hidden="true"></i>',
+  nextArrow: '<i class="fa fa-chevron-right right" aria-hidden="true"></i>',
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+	});	
+
+} 
+createSlick();
+
+//Will not throw error, even if called multiple times.
+$(window).on( 'resize', createSlick );
+
+</script>
+</body>
+</html>
+

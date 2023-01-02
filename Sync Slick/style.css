@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    margin: 15px 25px;
+}
+
+.product1{
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.product1 img{
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 50px;
+    width: 20%;
+}
+
+.product2{
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.slider-nav{
+    width: 35%;
+    display: block;
+    margin-inline: auto;
+}
+
